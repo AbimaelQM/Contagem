@@ -2,6 +2,8 @@
 
 # Compiled output
 /dist
+/dist1
+/src/assets/img/primeira_foto.jpg
 /tmp
 /out-tsc
 /bazel-out
