@@ -4,19 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ButtonModule } from 'primeng/button';
-import {DialogModule} from 'primeng/dialog';
-import {SelectButtonModule} from 'primeng/selectbutton';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-import {MenuItem} from 'primeng/api';
+
+
 import { PintinhoComponent } from './dialogs/pintinho/pintinho.component';
 import { HeterocromiaComponent } from './dialogs/heterocromia/heterocromia.component';
-import { CinemaRbComponent } from './dialogs/cinema-rb/cinema-rb.component';                  //api
+import { CinemaRbComponent } from './dialogs/cinema-rb/cinema-rb.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrincipalComponent } from './dialogs/principal/principal.component';                  //api
 
-
-// "node_modules/bootstrap/dist/css/bootstrap.min.css",
 
 @NgModule({
   declarations: [
@@ -25,14 +24,13 @@ import { CinemaRbComponent } from './dialogs/cinema-rb/cinema-rb.component';    
     PintinhoComponent,
     HeterocromiaComponent,
     CinemaRbComponent,
+    PrincipalComponent,
   ],
   imports: [
     AppRoutingModule,
-    ButtonModule,
-    AccordionModule,
-    DialogModule,
-    SelectButtonModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

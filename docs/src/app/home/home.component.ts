@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// import * as countdown from 'countdown';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CinemaRbComponent } from '../dialogs/cinema-rb/cinema-rb.component';
+import { HeterocromiaComponent } from '../dialogs/heterocromia/heterocromia.component';
+import { PintinhoComponent } from '../dialogs/pintinho/pintinho.component';
+import { PrincipalComponent } from '../dialogs/principal/principal.component';
 
 @Component({
   selector: 'app-home',
@@ -15,10 +19,22 @@ export class HomeComponent implements OnInit {
   Segundos: any;
 
 
-  constructor() {
-
+  constructor(
+    public modal: NgbModal
+  ) {}
+  
+  openPrincipal(){
+    this.modal.open(PrincipalComponent, { centered: true })
   }
-
+  openPintinho() {
+    this.modal.open(PintinhoComponent, { centered: true })
+  }
+  openHeterocromia() {
+    this.modal.open(HeterocromiaComponent, { centered: true })
+  }
+  openCinemaRB() {
+    this.modal.open(CinemaRbComponent, { centered: true })
+  }
   ngOnInit(): void {
     this.func()
   }

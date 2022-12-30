@@ -1,27 +1,31 @@
-#container {
+#cont {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFDFDF;
-    background-image: url('../../assets/img/Umbrella.svg');
+    background-image: url('../../assets/umbrella.svg');
     height: 100%;
+    width: 100%;
 }
 
-.block, .principal {
+.block,
+.principal_block {
     width: 90vw;
-    height: 80vh;
+    height: 82vh;
     margin-top: 6vh;
     background-color: #D343B4;
     box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    padding: 3% 5%;
+    padding: 2% 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.block{
-    height: 90vh;
+
+.block {
+    height: 82vh;
 }
+
 /* .block {
     width: 90vw;
     height: 80vh;
@@ -35,25 +39,29 @@
     justify-content: space-between;
 } */
 
-.texto_foto{
+.texto_foto {
     display: flex;
     flex-direction: row;
     gap: 2%;
-    background-image: url('/assets/img/himym2.jpg');
-    background-size: 75% auto;
-    background-repeat: no-repeat;
+    /* padding: 10px; */
 }
 
 .texto {
-    margin: 0 0 10px 10px;
+    background-image: url('../../assets/himym2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 80%;
+    /* margin: 0 0 10px 10px; */
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 3%;
     font-family: "Open Sans";
 
-} 
+}
 
-.texto > h3{
+.texto>h3 {
     color: #FFF;
     font-size: 6em;
     font-weight: 800;
@@ -61,7 +69,7 @@
     margin-bottom: 10px;
 }
 
-.texto > p{
+.texto>p {
     color: #FFDB51;
     padding-left: 8px;
     font-size: .9em;
@@ -71,7 +79,7 @@
     border-radius: 4px;
 }
 
-.texto > p:last-child{
+.texto>p:last-child {
     width: 30%;
 }
 
@@ -79,22 +87,22 @@
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
-  }
-  
-  .container:hover .overlay {
+}
+
+.container:hover .overlay {
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -104,17 +112,18 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-#amor-foto{
-    width: 40%;
+#amor-foto {
+    width: 26%;
     position: relative;
     display: flex;
     justify-content: flex-end;
 }
+
 .opacidade {
     position: absolute;
-    height: 100%;
+    height: -webkit-fill-available;
     width: 100%;
     margin: 0;
     opacity: 0;
@@ -122,70 +131,81 @@
     background-color: #1d1d1d71;
     border-radius: 6px;
     border: 4px solid #ffffff91;
-  }
+    display: block;
+}
+
 #amor-foto:hover .opacidade {
     opacity: 1;
     cursor: pointer;
 
 }
 
-#amor-foto > img{
+#amor-foto>img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 6px;
     border: 4px solid #ffffff91;
 }
+
 /* #amor-foto > img{
     width: 100%;
     height: auto;
     border-radius: 1rem;
 } */
 
-.enfeite{
+.enfeite {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 8px 0;
 }
 
-.umbrella_direita{
+.umbrella_direita {
     rotate: 45deg;
 }
-.umbrella_esquerda{
+
+.umbrella_esquerda {
     rotate: -45deg;
 }
 
-.block:last-child{
+.block:last-child {
     margin-bottom: 8vh;
 }
 
-a{
+a {
     text-decoration: none;
     justify-content: center;
     color: #ffffff;
+    width: 80px;
 }
 
 .button-down {
     outline: none;
     margin-top: 15px;
     animation: MoveUpDown 1s linear infinite;
-    background-color:#ffffff;
+    background-color: #ffffff;
     /* background-color: rgb(189, 241, 164); */
 }
 
-  
+
 @keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
+
+    0%,
+    100% {
+        bottom: 0;
     }
+
     50% {
-      bottom: 10px;
+        bottom: 10px;
     }
 }
-.p-button{
+
+.p-button {
     width: 150px;
 }
-.p-button-text{
+
+.p-button-text {
     color: #D343B4;
 }
 
@@ -196,13 +216,13 @@ a{
     -moz-box-shadow: none;
 }
 
-.fotos{
+.fotos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.fotos > img{
+.fotos>img {
     width: 30%;
     border-radius: 6px;
     cursor: pointer;
@@ -210,10 +230,10 @@ a{
 
 }
 
-.central{
+.central {
     margin-top: 20px;
 }
 
-.lateral{
+.lateral {
     margin-bottom: 20px;
 }
