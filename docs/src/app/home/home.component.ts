@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { BrancoComponent } from '../dialogs/branco/branco.component';
 import { CinemaRbComponent } from '../dialogs/cinema-rb/cinema-rb.component';
+import { CruzeiroComponent } from '../dialogs/cruzeiro/cruzeiro.component';
+import { DespedidaComponent } from '../dialogs/despedida/despedida.component';
+import { FamiliaComponent } from '../dialogs/familia/familia.component';
 import { HeterocromiaComponent } from '../dialogs/heterocromia/heterocromia.component';
+import { PedidoComponent } from '../dialogs/pedido/pedido.component';
 import { PintinhoComponent } from '../dialogs/pintinho/pintinho.component';
 import { PrincipalComponent } from '../dialogs/principal/principal.component';
+import { ReencontroComponent } from '../dialogs/reencontro/reencontro.component';
 
 @Component({
   selector: 'app-home',
@@ -34,6 +40,24 @@ export class HomeComponent implements OnInit {
   }
   openCinemaRB() {
     this.modal.open(CinemaRbComponent, { centered: true })
+  }
+  openPedido() {
+    this.modal.open(PedidoComponent, { centered: true })
+  }
+  openReencontro() {
+    this.modal.open(ReencontroComponent, { centered: true })
+  }
+  openSaida() {
+    this.modal.open(FamiliaComponent, { centered: true })
+  }
+  openCruzeiro() {
+    this.modal.open(CruzeiroComponent, { centered: true })
+  }
+  openDespedida() {
+    this.modal.open(DespedidaComponent, { centered: true })
+  }
+  openBranco() {
+    this.modal.open(BrancoComponent, { centered: true })
   }
   ngOnInit(): void {
     this.func()

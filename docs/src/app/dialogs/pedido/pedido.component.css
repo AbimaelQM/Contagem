@@ -23,6 +23,19 @@ p{
     background-size: 20% auto;
 }
 
+a{
+    text-decoration: none;
+}
+
+.nao:hover{
+    opacity: 0;
+    cursor: auto;
+}
+
+.btn{
+    background-color: rgba(245, 48, 48, 0.904);
+}
+
 .second {
     position: relative;
 }

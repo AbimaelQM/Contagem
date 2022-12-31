@@ -28,6 +28,10 @@
     </div> -->
     <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap'); </style>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"> -->
+    
+    <!-- %C3%A3 = ã
+    https://wa.me/5568999961248?text=SIM+MEU+AMOR -->
+    
     <div class="principal_block">
         <div class="enfeite">
             <img src="/assets/efeito_esquerdo.svg" alt="">
@@ -42,7 +46,7 @@
                 </h3>
                 <p>Essa virada de ano não vamos passar juntos fisicamente, mas queria comemorar nossa data e fim de ano
                     de um jeito diferente para mostrar o quanto te amo, então vamos começar!</p>
-                <p>Coloque a seta na foto</p>
+                <p>Clica na nossa foto mo e nas proximas</p>
             </div>
 
 
@@ -90,9 +94,9 @@
             <img src="/assets/efeito_direito.svg" alt="">
         </div>
         <div class="fotos">
-            <img class="lateral" src="/assets/reencontro.jpg" alt="">
-            <img class="central" src="/assets/pintinho.jpg" alt="">
-            <img class="lateral" src="/assets/cinema2.jpg" alt="">
+            <img (click)="openPedido()" class="lateral" src="/assets/pedido.jpeg" alt="">
+            <img (click)="openReencontro()" class="central" src="/assets/reencontro.jpg" alt="">
+            <img (click)="openSaida()" class="lateral" src="/assets/saindo.jpg" alt="">
         </div>
         <div class="enfeite">
             <img class="umbrella_esquerda" src="/assets/umbrella_centro.svg" alt="">
@@ -108,9 +112,9 @@
             <img src="/assets/efeito_direito.svg" alt="">
         </div>
         <div class="fotos">
-            <img class="lateral" src="/assets/heterocromia.jpeg" alt="">
-            <img class="central" src="/assets/pintinho.jpg" alt="">
-            <img class="lateral" src="/assets/cinema2.jpg" alt="">
+            <img (click)="openCruzeiro()" class="lateral" src="/assets/cruzeiro.png" alt="">
+            <img (click)="openDespedida()" class="central" src="/assets/despedida.jpg" alt="">
+            <img (click)="openBranco()" class="lateral" src="/assets/branco.webp" alt="">
         </div>
         <div class="enfeite">
             <img class="umbrella_esquerda" src="/assets/umbrella_centro.svg" alt="">

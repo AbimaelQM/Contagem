@@ -14,7 +14,12 @@ import { PintinhoComponent } from './dialogs/pintinho/pintinho.component';
 import { HeterocromiaComponent } from './dialogs/heterocromia/heterocromia.component';
 import { CinemaRbComponent } from './dialogs/cinema-rb/cinema-rb.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { PrincipalComponent } from './dialogs/principal/principal.component';                  //api
+import { PrincipalComponent } from './dialogs/principal/principal.component';
+import { ReencontroComponent } from './dialogs/reencontro/reencontro.component';
+import { FamiliaComponent } from './dialogs/familia/familia.component';
+import { PedidoComponent } from './dialogs/pedido/pedido.component';
+import { DespedidaComponent } from './dialogs/despedida/despedida.component';
+import { BrancoComponent } from './dialogs/branco/branco.component';
 
 
 @NgModule({
@@ -25,6 +30,11 @@ import { PrincipalComponent } from './dialogs/principal/principal.component';   
     HeterocromiaComponent,
     CinemaRbComponent,
     PrincipalComponent,
+    ReencontroComponent,
+    FamiliaComponent,
+    PedidoComponent,
+    DespedidaComponent,
+    BrancoComponent,
   ],
   imports: [
     AppRoutingModule,
